@@ -1,0 +1,281 @@
+
+
+body{
+      /*background-image: url('background2.jpg');  */
+      background-color: #cccccc;
+      
+      font-size: 87.5%;  /* Base font size is 14px*/
+      font-family: Arial, 'Lucida Sans Unicode';
+      line-height: 1.5;
+      text-align: left;
+      
+  
+}
+
+a {     /* style links  */
+    text-decoration: none; 	/*remove decoration in the liks ie line*/
+    
+}
+
+a:link, a:visited{
+ color: #cf5c3f;     
+}
+
+a:hover, a:active{
+ background-color: #cf5c3f;
+ color: #fff;
+}
+
+.mainHeader img{  /*style the image*/
+  width: 30%;
+  height: auto;
+  margin: 2% /*top and bottom*/ 0% /*nothing on the side*/
+}
+
+.mainHeader nav {
+  background-color: #666;
+  height: 40px;  /*height of navigation bar*/
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.mainHeader nav ul{
+  list-style: none; /*remove the bullets of ul */
+  margin: 0% auto;
+}
+
+.mainHeader nav ul li{
+  float: left;
+  display: inline;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{	/*all links visited should have the same style*/
+    color: #FFF;
+    display: inline-block;
+    padding: 10px 25px;    /*space between the navigation edge and the word eg home*/
+    height: 20px;
+}
+
+.mainHeader nav a:hover, .mainHeader nav a:active,
+.mainHeader nav .active a:link, .mainHeader nav .active a:visited{
+  background-color: #cf5c3f;  /* changes color when you hover in navigation bar */
+  text-shadow: none;
+}
+
+.mainHeader nav ul li a { /* style the link in vavigation bar */
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.mainContent {
+  line-height: 25px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+}
+
+.content {
+  width: 70%;
+  float: left;
+    
+}
+
+
+
+.topcontent {
+  background-color: #FFf;
+  border-radius: 5px;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+  margin-top: 2%;
+}
+
+.bottomcontent {
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+  margin-top: 2%;
+}
+
+.inset {border-style: inset;} /* inset  border line   */
+
+video {
+  width:100%;
+  height:auto;  
+}
+/* table style */
+table {
+  width: 100%
+} 
+th,td {
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even){ background-color: #f2f2f2}  /*stripped colors table*/
+
+
+form {				/*align the form in the center*/
+      text-align: center;    
+}
+
+.post_info {    /*style for the footer in the containers*/
+   font-style: italic;
+   color: #999;
+   font-size: 85%; /*size of the text of the footer */
+}
+
+
+.top-sidebar {
+  width: 21%;
+  float: left;
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  
+  padding: 2% 3%;
+  margin:1.5% 0% 2% 3%;
+}
+
+
+.middle-sidebar {
+  width: 21%;
+  float: left;
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  margin-left: 3%;
+  padding: 2% 3%;
+  margin-bottom: 2%;
+  
+}
+
+.bottom-sidebar {
+  width: 21%;
+  float: left;
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  margin-left: 3%;
+  padding: 2% 3%;
+  margin-bottom: 2%;
+}
+
+.mainfooter {
+  width: 100%; /* a widht of 100% of its container*/
+  float: left;
+  height: auto; /*footer height*/
+   border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+  background-color: #666;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}   
+
+.mainfooter p {
+  width: 92%;
+  margin: 10px auto ; /*20px up and downs*/
+  color: #fff; /*make the text white */
+  
+}
+
+.body {
+  margin: 0 auto;
+  width: 70%; /*width of your whole website/container*/
+  clear: both; 	/* no floating object will be on the left or right side   */
+  
+}
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px)    /*when screen shrinks to mobile size*/
+{  
+    
+  
+  
+  .body {
+  margin: 0 auto;
+  width: 90%; /*width of your whole website/container  */
+  font-size: 95%;
+      
+}
+
+.mainHeader img{  /*style the image*/
+  width: 100%;
+  height: auto;
+  margin: 2% /*top and bottom*/ 0% /*nothing on the side*/
+}
+  
+  .mainHeader nav {
+  
+  height: 160px;  /*height of navigation bar*/
+  
+}
+
+.mainHeader nav ul{
+  padding-left: 0%;
+}
+
+
+
+.mainHeader nav ul li{
+    width: 100%; /*to make the list line up in a top down manner*/
+    text-align: center;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited{	/*all links visited should have the same style*/
+   
+    padding: 10px 25px;    /*space between the navigation edge and the word eg home*/
+    height: 20px;
+    display: block;  /*make the hover cover the whole line*/
+}
+
+
+ 
+
+.content {
+  width: 100%;
+  float: left;
+  margin-top: 2%;  
+}
+
+.post_info {
+  display: none;  /*remove the footer of the container*/
+}
+
+.topcontent {
+  background-color: #FFf;
+  border-radius: 5px;
+    -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.bottomcontent {
+  margin-top: 3%;
+}
+
+
+.top-sidebar , .middle-sidebar , .bottom-sidebar {
+  width: 94%;
+  margin: 2% 0 2% 0;
+  padding: 2% 3%;
+}
+
+
+
+
+
+
+  
+}
